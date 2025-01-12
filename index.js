@@ -4,6 +4,7 @@ const { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc } =
 const app = express();
 app.use(express.json());
 
+//server
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });;
