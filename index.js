@@ -14,12 +14,12 @@ app.listen(3000, () => {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCeV3N4mwB4xIhPh6_36Bj_JlAhfOYqiPc",
-    authDomain: "firekevin-c000c.firebaseapp.com",
-    projectId: "firekevin-c000c",
-    storageBucket: "firekevin-c000c.firebasestorage.app",
-    messagingSenderId: "366265188859",
-    appId: "1:366265188859:web:098ff2b83da46c16c20b5e"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain:  process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
 };
 
 // Initialize Firebase
