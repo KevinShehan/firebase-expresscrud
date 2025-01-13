@@ -3,6 +3,8 @@ const { initializeApp } = require('firebase/app');
 const { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc } = require('firebase/firestore');
 const app = express();
 app.use(express.json());
+require('dotenv').config();
+
 
 //server
 app.listen(3000, () => {
